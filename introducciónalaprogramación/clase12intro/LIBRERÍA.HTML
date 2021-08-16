@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRERÍA MENTES FELICES</title>
+    <style>
+        *{
+            text-align: center;
+            background-color: rgb(5, 68, 87);
+        }
+        h1{
+            color: rgb(255, 255, 255);
+            text-align: left;
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+        img{
+            width: 200px;
+            height: 250px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--PRIMERO COLOCAMOS LAS IMAGENES    
+
+    <img src="https://www.designwizard.com/wp-content/uploads/2018/12/fff72eb0-5be4-11e7-9537-3f5615bd77e7.jpg" >
+    <img src="https://www.adobe.com/es/express/create/cover/media_10487a00f81e45735d68f68bc2739b65bb4997de1.png?width=2000&format=webply&optimize=medium" >
+    <img src="https://zumografica.com/wp-content/uploads/2017/09/libro-imprenta-lima.jpg" >
+    <img src="https://i.pinimg.com/236x/22/fd/25/22fd25dddb9acdf6a828ee27f184f250.jpg">
+    <img src="https://marketplace.canva.com/EADzX8RDJRM/1/0/251w/canva-verde-oscuro-cobre-org%C3%A1nico-patr%C3%B3n-vintage-libro-electr%C3%B3nico-portada-2axR_4UDZmo.jpg">
+-->
+    <script>
+
+var LIBRO1 = '<img src="https://www.designwizard.com/wp-content/uploads/2018/12/fff72eb0-5be4-11e7-9537-3f5615bd77e7.jpg" >';
+      
+   //    document.write(LIBRO1);
+      
+     var LIBRO2 = '<img src="https://www.adobe.com/es/express/create/cover/media_10487a00f81e45735d68f68bc2739b65bb4997de1.png?width=2000&format=webply&optimize=medium" >';  
+     
+  //    document.write(LIBRO2);
+
+      var LIBRO3 = '<img src="https://zumografica.com/wp-content/uploads/2017/09/libro-imprenta-lima.jpg" >';  
+      
+  //    document.write(LIBRO3);
+
+      var LIBRO4 = '<img src="https://i.pinimg.com/236x/22/fd/25/22fd25dddb9acdf6a828ee27f184f250.jpg">';  
+     
+  //     document.write(LIBRO4);
+
+     var LIBRO5 = '<img src="https://marketplace.canva.com/EADzX8RDJRM/1/0/251w/canva-verde-oscuro-cobre-org%C3%A1nico-patr%C3%B3n-vintage-libro-electr%C3%B3nico-portada-2axR_4UDZmo.jpg">';  
+
+  //     document.write(LIBRO5);
+
+      LIBROS = [LIBRO1,LIBRO2,LIBRO3,LIBRO4,LIBRO5];
+
+     // document.write(LIBROS [0]);
+     // document.write(LIBROS[1]);
+     // document.write(LIBROS[2]);
+     // document.write(LIBROS[3]);
+     // document.write(LIBROS[4]);
+
+    // ahora usaremos el for y interactuaremos con el usuario.
+
+     document.write("<h1> LIBROS DISPONIBLES</H1>");
+    for (i=0; i<=4;i++){
+        document.write(LIBROS [i]);
+
+    }
+   
+    alert("Hola querido lector");
+    alert("Bienvenido a La librería mentes felices");
+    alert("tenemos interesantes libros que puedes descargar y leer");
+    alert("tu puesdes escoger");
+    alert("escoge el que deseas")
+    
+
+    ELECCION= Number(prompt(" 0) CREATURES IN THE CHASM  1)EL BOSQUE DESPIERTO 2)LOS HOMBRES DEL NORTE 3)A DOS METROS DE TI 4)SECRETOS DE LAS FLORES") ) ;
+
+    document.write("<h1> LIBROS ESCOGIDO </H1>");
+
+     document.write(LIBROS[ELECCION]);
+
+
+   </script>
+</body>
+</html>

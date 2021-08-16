@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>A LA SUERTE</title>
+</head>
+<body style="text-align: center; background-color: rgb(255, 117, 93)" ;>
+
+<script>
+  //vamos hacer una ventana de la suerte
+  //primero saludamos.
+  alert("HOLA SOY ADIVINO")
+  alert("TE DIRÉ LO QUE VEO EN TU FUTURO")
+  alert("SOLO DEBES PRECIONAR UNA OPCIÓN")
+
+  //presentaremos las opciones v)Salud  f) Futuro
+
+  var opcion=prompt("(v) Salud  (f) futuro");
+
+  //respuesta de las opciones
+
+  if (opcion=="v") {
+      var adivinacion ="Tiempos hermosos y goso de salud tendrás en la salud, come más sano y haz deporte, tu cuerpo lo agradecerá";
+      var img='<img src= "https://cloudfront-us-east-1.images.arcpublishing.com/gruporepublica/6DXTNVI45VE7TK75B4WAUYJQOA.jpg">'
+    }
+
+else
+
+  if(opcion=="f") {
+      adivinacion="Veo en tu futuro mucha felicidad, personas a tu alrededor, todos se están abrazando felices por volver a verse después de tiempos ";
+      img='<img src="https://image.freepik.com/vector-gratis/pareja-abrazandose-personaje-dibujos-animados-lindo_131454-152.jpg">'
+  }
+
+  //si no introduce la respuesta responderemos "UPSS TU DESEO NO HA SIDO RECONOCIDO, VUELVE A INTENTAR".
+
+  else{
+      adivinacion="UPSS TU DESEO NO HA SIDO RECONOCIDO, VUELVE A INTENTAR";
+      img='<img src="https://media.gettyimages.com/illustrations/fortune-teller-illustration-id97215878?s=612x612">'
+  }
+
+
+  //mostrar las adivinaciones 
+       alert(adivinacion)
+  //ahora mostra las imagenes
+     document.write(img)
+
+
+
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>

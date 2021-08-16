@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSEO DE ARTE</title>
+    <style>
+
+
+        img{
+            width: 300px;
+            height: 330px;
+        }
+
+        #cuadro{
+            text-align: center;
+            background-color: cadetblue;
+            padding: 10px;
+
+        }
+
+        #titulo{
+            margin-top: 30px;
+            margin-left: 40px;
+            color: rgb(2, 63, 63);
+            font-size: 20px;
+        }
+
+        #nombres{
+            padding: 0%;
+            text-align: center;
+
+        }
+
+        h3{
+            width: 400px;
+            margin-left: 380px;
+            padding-top: 0px;
+            background-color: darkred;
+            color: white;
+        }
+
+        #botones{
+            text-align: center;
+        }
+
+        #ANTERIOR:hover{
+            background-color: rgb(233, 45, 45);
+        }
+        #SIGUIENTE:hover{
+            background-color: rgb(4, 202, 202);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="nombres">
+        <h3>CREATIVIDAD, S.A</h3>
+    </div>
+
+    <div id="cuadro">
+         <img src="https://images-na.ssl-images-amazon.com/images/I/41Grrv5yRhL._SX324_BO1,204,203,200_.jpg" >
+    </div>
+    
+    <br> 
+
+    <div id="botones">
+        <button id="ANTERIOR" onclick="Anterior()">ANTERIOR</button>
+        <button id="SIGUIENTE" onclick="Siguiente()">Siguiente</button>
+    </div>
+
+   <script>
+
+       i=0
+
+       function Siguiente(){
+
+        if (i<5){
+            i++;
+        }
+        else{
+        }
+
+        document.getElementById("cuadro").innerHTML= LIBROS[i];
+        document.getElementById("nombres").innerHTML = TEXTOS[i];
+       }
+
+       function Anterior(){
+           if (i>0){
+           i--;               
+           }
+
+        document.getElementById("cuadro").innerHTML= LIBROS[i];
+        document.getElementById("nombres").innerHTML = TEXTOS[i];
+       }
+
+
+   </script>
+    
+
+
+    <script>
+
+        //variable para las imagenes
+        var C1 = ('<img src="https://images-na.ssl-images-amazon.com/images/I/41Grrv5yRhL._SX324_BO1,204,203,200_.jpg" >');
+;
+        var C2 = (' <img src="https://i.pinimg.com/564x/5a/88/21/5a8821ef23b3ede860ea14c3ec8ee825.jpg" >');
+
+        var C3  = ('<img src="https://images.cdn2.buscalibre.com/fit-in/360x360/f2/ba/f2ba6561e5e1bddfae3426a35744f8ff.jpg">');
+
+        var C4  = ('<img src="https://www.planetadelibros.com.pe/usuaris/libros/fotos/184/m_libros/183115_seis-sombreros-para-pensar_9788449323072.jpg">');
+
+        var C5  = ('<img src="https://images-na.ssl-images-amazon.com/images/I/41SpjBEGl3L._SX322_BO1,204,203,200_.jpg">');
+
+        var C6 = ('<img src="https://imagessl1.casadellibro.com/a/l/t5/41/9788417903541.jpg">');
+
+        var LIBROS = [C1,C2,C3,C4,C5,C6];
+
+        /*
+        for(i=0;i<=5;i++){
+            document.write(LIBROS[i]);
+        }
+        */
+        
+    </script>
+
+    <script>
+        //variables para el texto
+
+        var TEXT0 = ("<h3>CREATIVIDAD,S.A</h3>") ;
+        var TEXT1 = ("<h3>ROBA COMO UN ARTISTA</h3>") ;
+        var TEXT2 = ("<h3>EL CAMINO DE UN ARTISTA</h3>") ;
+        var TEXT3 = ("<h3>SEIS SOMBREROS PARA PENSAR</h3>") ;
+        var TEXT4 = ("<h3>Creatividad: 62 ejercicioss</h3>") ;
+        var TEXT5 = ("<h3>ANATOMÍA DE LA CREATIVIDAD</h3>") ;
+
+        var TEXTOS = [TEXT0,TEXT1,TEXT2,TEXT3,TEXT4,TEXT5,]
+
+       /*
+        for (i=0;i<=5;i++){
+            document.write(TEXTOS[i]);
+        }
+        */
+
+
+
+
+    </script>
+    
+</body>
+</html>

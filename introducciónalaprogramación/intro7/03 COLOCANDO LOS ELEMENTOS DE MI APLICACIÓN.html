@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>02 DISEÑANDO EL ALGORITMO</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		
+		img {
+
+			width: 300px;
+			height: 210px;
+
+
+		}
+
+
+		td {
+
+
+			text-align: center;
+
+
+		}
+
+		#tdform {
+
+			text-align: left;
+
+		}
+
+		table {
+
+			/* Centra la tabla en el documento*/
+			margin: 0 auto; 
+
+
+
+
+		}
+
+
+	</style>
+
+</head>
+
+<body>
+
+
+<form name="REGALOS">
+
+<!-- VAMOS A CREAR UNA TABLA -->
+<table border="3">
+
+	<!-- LO PRIMERO QUE HAY QUE HACER ES CREAR UNA FILA (row)-->
+	<tr>
+
+		<!-- LO SEGUNDO QUE HAGO ES CREAR UNA CELDA (data cell)-->
+		<td bgcolor="orange" colspan="2">
+			<!-- ESTA ES MI PRIMERA CELDA-->
+			<h1>ELIGIENDO MI REGALO DE CUMPLEAÑOS</h1>
+
+
+		</td>
+
+	</tr>
+
+	<!-- NOS VAMOS POR NUESTRA SEGUNDA FILA-->
+	<tr>
+		
+		<td id="tdform" bgcolor="red">
+			
+			<h1>Selecciona una alternativa de regalo:</h1>
+			<!-- TODAVÍA NO USAR LA ETIQUETA FORM-->
+
+			<h2>
+				<input type="radio" name="regalo" value="Un PS5">
+				Un PS5
+			</h2>
+
+			<h2>
+				<input type="radio" name="regalo" value="Un DRON">
+				Un DRON
+			</h2>
+
+			<h2>
+				<input type="radio" name="regalo" value="Una SESIÓN DE SPA">
+				Una SESIÓN DE SPA
+			</h2>
+
+
+
+
+		</td>
+
+		<!-- Vamos a crear la segunda celda de la segunda Fila-->
+		<td bgcolor="blue">
+			
+			<h1>ESTE ES TU REGALO</h1>
+
+			<!-- La Etiqueta DIV me va a permitir identificar la zona de reemplazo del código HTML-->
+			<div id="imagen">
+			
+				<img width="300" src="https://image.freepik.com/vector-gratis/navidad-ano-nuevo-ilustracion-fondo-blanco-caja-regalo-roja_164911-157.jpg">
+			
+			</div>
+
+
+		</td>
+
+
+	</tr>
+
+	<!-- Nos vamos por la tercera fila-->
+	<tr>
+		
+		<td bgcolor="green">
+			
+			<input type="button" name="mostrar" value="MOSTRAR EL REGALO ELEGIDO" onclick="Mostrar()">
+
+		</td>
+
+		<!-- Vamos a crear la segunda celda de la tercera fila -->
+		<td bgcolor="yellow">
+			
+			<h2>
+			Tu regalo es:
+			<input type="text" name="mensaje">
+			</h2>
+
+		</td>
+
+
+	</tr>
+
+
+</table>
+
+</form>
+
+
+<script type="text/javascript">
+	
+function Mostrar() {
+
+// Voy colocar en el cuadro de mensaje el valor de la opción elegida
+
+REGALOS.mensaje.value = REGALOS.regalo.value;
+
+// Voy a mostrar un mensaje de alerta que me indique cuál es el regalo elegido.
+// Para eso voy a usar una ESTRUCTURA CONDICIONAL MÚLTIPLE
+// Lo primero que necesito es una VARIABLE
+
+var REGALO = REGALOS.regalo.value;
+
+switch (REGALO) {
+
+	case "Un PS5":
+		alert("Tu regalo es un PS5");
+		var IMAGEN='<img width="300" src="https://cdn.atomix.vg/wp-content/uploads/2020/09/ps5-memes-.jpg">';
+
+	break;
+
+	case "Un DRON":
+		alert("Tu regalo es Un DRON");
+		IMAGEN='<img width="300" src="https://i.ytimg.com/vi/3mPO814jiUw/maxresdefault.jpg">';
+
+	break;
+
+	case "Una SESIÓN DE SPA":
+		alert("Tu regalo es Una SESIÓN DE SPA");
+		IMAGEN='<img width="300" src="http://compras.cuponidad.pe/images/Deals/illary-spa-masajes.jpg">';
+
+	break;
+
+	default:
+		alert("Recuerda elegir tu Regalo");
+		IMAGEN='<img width="300" src="https://i.ytimg.com/vi/V_GEclQMu6A/maxresdefault.jpg">';
+
+
+}
+
+// Cómo reemplazo la imagen del regalo por otro.
+// Cómo reemplazo el código HTML de la imagen por otro.
+
+document.getElementById("imagen").innerHTML = IMAGEN;
+
+
+
+
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>

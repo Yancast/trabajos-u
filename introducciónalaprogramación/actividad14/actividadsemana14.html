@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        #principal{
+            background-color: rgb(65, 65, 139);
+            display: flex;
+            flex-direction: row;
+        }
+        #parte1{
+                background-color: rgb(177, 74, 0);
+                width: 1000px;
+                text-align: center;
+        }
+        #parte2{
+                 background-color: rgb(143, 0, 71);
+                 width:370px ;
+                 text-align: center;
+        }
+	    button {
+		       width: 200px;
+		        margin: 8px 2px;
+		        padding: 5px 5px;
+		        background-color: orange;
+		        /* border: none; */
+	        	font-size: 22px;
+	        	color: white;
+	        	cursor: pointer;
+		        text-decoration: none;
+                border: none;
+                box-shadow: 0px 0px 5px  black;
+        }
+
+        h1{
+            color: cornsilk;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="principal">
+
+      <div id="parte1">
+             <h1>LADO CREATIVO</h1>
+             <iframe id="contenido" width="760" height="515" src="https://www.youtube.com/embed/H_mn2apb49k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+     <div id="parte2">
+		<h1>Tabla de contenidos</h1>
+
+	    	<button onclick="OBRAS()">OBRAS</button>
+		    <br>
+	    	<button onclick="LIBROS()">LIBROS</button>
+		    <br>
+		    <button onclick="Video()">Video</button>
+      </div>
+
+      <script>
+           
+           function OBRAS(){
+               document.getElementById("contenido").src = "obradearte.html"
+           }
+           function LIBROS(){
+               document.getElementById("contenido").src = "Libros.html"
+           }
+           
+           function Video(){
+               document.getElementById("contenido").src= "https://www.youtube.com/embed/H_mn2apb49k"
+           }
+
+      </script>
+
+    </div>
+
+    
+</body>
+</html>

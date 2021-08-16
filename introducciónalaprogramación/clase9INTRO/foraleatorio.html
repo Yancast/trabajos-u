@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>For con los numeros aleatorios </title>
+</head>
+<body>
+    <h1>Vamos a conocer los numero aleatorios</h1>
+    <h2>Vamos a generar 10 edades entre 17 y 25</h2>
+    <script>
+     
+     for ( var i=1; i<=10; i++) {  
+
+
+     var NA = Math.random();
+
+
+     //vamos a darle forma 
+     // vamos a dar limite minimo y maximo.
+
+     var MIN= 17;
+     var MAX= 25;
+
+     //vamos a crear la variable del número aleatorio conforma NOTA_A
+
+     var NOTA_A = NA *(MAX - MIN) + MIN; 
+
+     //vamos a ver el Na conforme 
+
+
+     //vamos a redondear para que nos salga un valor entero
+
+     var NOTA_R = Math.round (NOTA_A);
+
+     document.write("edad Generada "+ i+ " = " + NOTA_R + "<br>")
+
+
+    }
+
+
+       
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>02 GALERÍA</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<!--
+
+<h1>Mi Galería en HTML</h1>
+
+<img width=420 src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/09/02/15674118138708.jpg">
+
+<img src="https://acs2.blob.core.windows.net/imgcatalogo/m/VA_055433ba2ee44f87afc1188abc607be6.jpg">
+
+<img width=420 src="https://cdn.motor1.com/images/mgl/MoVM6/s3/lamborghini-sc18-alston.jpg">
+
+-->
+
+<script type="text/javascript">
+	
+// Vamos a crear un arreglo de imágenes
+
+// En la variable de texto usar comillas simples para almacenar
+// el texto de la Etiqueta HTML
+
+
+
+BUGATTI="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/09/02/15674118138708.jpg";
+
+
+FORD="https://acs2.blob.core.windows.net/imgcatalogo/m/VA_055433ba2ee44f87afc1188abc607be6.jpg";
+
+LAMBORGHINI="https://cdn.motor1.com/images/mgl/MoVM6/s3/lamborghini-sc18-alston.jpg";
+
+// Cargando el arreglo GALERIA
+GALERIA=[BUGATTI,FORD,LAMBORGHINI];
+
+/*
+
+// Mostrar el contenido con FOR
+
+document.write("<br><br>"+"A partir estoy mostrando la Galería con JS"+"<br><br>");
+
+for (i=0;i<=2;i++){
+
+document.write(GALERIA[i]);
+
+}
+
+*/
+
+</script>
+
+<!-- Colocar una imagen en Html que yo pueda cambiar-->
+
+<br><br>
+
+<div align="center">
+
+<img id="ImgCentral" width=420 height=280 src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/09/02/15674118138708.jpg">
+
+</div>
+
+<br><br>
+
+
+
+<div align="center">
+
+<button onclick="ANTERIOR()">ANTERIOR</button>
+
+<button onclick="SIGUIENTE()">SIGUIENTE</button>
+
+
+
+</div>
+
+
+
+<script type="text/javascript">
+
+var i=0;
+
+function ANTERIOR() {
+
+var IMG_CENTRAL = document.getElementById('ImgCentral');
+
+if (i<1) {
+
+i=0;
+
+alert("Primera imagen");
+
+}
+
+else {
+
+i--;
+
+}
+
+
+IMG_CENTRAL.src=GALERIA[i];
+
+}
+
+function SIGUIENTE() {
+
+var IMG_CENTRAL = document.getElementById('ImgCentral');
+
+if (i>=2) {
+
+i=2;
+
+alert("Última imagen");
+
+}
+
+else {
+
+i++;
+
+}
+
+IMG_CENTRAL.src=GALERIA[i];
+
+}
+
+
+</script>
+
+
+</body>
+</html>

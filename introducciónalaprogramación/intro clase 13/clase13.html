@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galería de jugadores de futboll</title>
+
+    <style>
+        img{
+            width: 435px;
+            height: 500px;
+            
+        }
+
+        div{
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+  
+    <div id="imagen">
+       <img src="https://elbocon.pe/resizer/7RQE_v7um7pl2AtWg-B3ScrTUYM=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/VQFDRHW2OVG5BOR3ECPAOMJTKI.jpg" >
+   </div>
+   <br> <br>
+   <!--los botones -->
+
+   <div>
+      <button onclick="Anterior()">ANTERIOR</button>
+     <BUtton onclick="Siguiente()">SIGUIENTE</BUtton>
+  </div> 
+
+  <script>
+
+      var i=0;
+
+      function Siguiente(){
+
+        //para evitar pasarnos después de la ultima imagen vamos a condicionar 
+        //el incremento de i
+        if(i <2){
+
+              i++;
+        }
+        else{
+            alert("haz llegado a la ultima imagen");
+            i = 2;
+
+        }
+
+        //vamos a incrementar el valor de i 
+
+        document.getElementById("imagen").innerHTML = JUGADORES[i];
+
+      }
+
+      function Anterior(){
+
+        if(i>0){
+           i--;
+        }
+        else{
+            alert("has llegado a la primera imagen")
+            i=0;
+        }
+
+
+          document.getElementById("imagen").innerHTML= JUGADORES[i];
+      }
+  </script>
+  
+    <!--
+    <img src="https://www.miraflores.gob.pe/wp-content/uploads/2020/11/026564B5-F95A-4AA5-BE10-07FF8CBD60B7-701x1024.jpeg" >
+    <img src="https://www.expreso.com.pe/wp-content/uploads/2019/05/juan-chiquito-flores.jpg" >
+    <img src="https://cde.peru.com//ima/0/0/4/8/7/487069/380x300.jpg">
+-->
+
+
+     <script>
+        
+        var CUTO= (' <img src="https://elbocon.pe/resizer/7RQE_v7um7pl2AtWg-B3ScrTUYM=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/VQFDRHW2OVG5BOR3ECPAOMJTKI.jpg" >');
+       
+       // document.write(CUTO);
+
+        var LAPAGOD =(  '<img src="https://www.miraflores.gob.pe/wp-content/uploads/2020/11/026564B5-F95A-4AA5-BE10-07FF8CBD60B7-701x1024.jpeg" >');
+        
+       // document.write(LAPAGOD);
+
+        var KUKIN = ('<img src="https://www.expreso.com.pe/wp-content/uploads/2019/05/juan-chiquito-flores.jpg" >');
+        
+       // document.write(KUKIN);
+
+      //  document.write();
+
+        // El ARREGLO DE LOS JUGADORES 
+
+        var JUGADORES = [CUTO, LAPAGOD,KUKIN];
+   
+      /* 
+        for (i=0;i<=2;i++){
+
+            document.write(JUGADORES[i]);
+
+        }
+
+        */
+
+    
+
+
+
+     </script>
+
+
+</body>
+</html>

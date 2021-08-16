@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Forma al numero aleatorio</title>
+</head>
+<body>
+    <h1>Vamos a conocer los numero aleatorios</h1>
+    <script>
+     
+     var NA = Math.random();
+
+     document.write("este es mi numero aleatorio =" + NA + "<br> </br>");
+
+     //vamos a darle forma 
+     // vamos a dar limite minimo y maximo.
+
+     var MIN= 18;
+     var MAX= 20;
+
+     //vamos a crear la variable del número aleatorio conforma NOTA_A
+
+     var NOTA_A = NA *(MAX - MIN) + MIN; 
+
+     //vamos a ver el Na conforme 
+
+     document.write("Este es mi numero conforme =" + NOTA_A + "<br></br>");
+
+     //vamos a redondear para que nos salga un valor entero
+
+     var NOTA_R = Math.round (NOTA_A);
+
+     document.write("este es mi numero= " + NOTA_R )
+
+
+
+       
+
+    </script>
+    
+</body>
+</html>

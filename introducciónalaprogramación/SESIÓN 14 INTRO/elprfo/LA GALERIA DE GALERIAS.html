@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>LA GALERÍA DE LAS GALERÍAS</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		
+	#Principal {
+
+		background-color: orange;
+
+		display: flex;
+
+		flex-direction: row;
+
+
+	}
+
+	#Parte1 {
+
+		background-color: green;
+
+		width: 1000px;
+
+		text-align: center;
+
+	}
+
+	#Parte2 {
+
+		background-color: red;
+
+		width: 370px;
+
+		text-align: center;
+
+
+	}
+
+	button {
+
+
+		width: 200px;
+
+		margin: 8px 2px;
+
+		padding: 5px 5px;
+
+		background-color: orange;
+
+		/* border: none; */
+
+		font-size: 22px;
+
+		color: white;
+
+		cursor: pointer;
+
+		text-decoration: underline;
+
+
+	}
+
+	h1 {
+
+		color: white;
+	}
+
+
+	</style>
+
+
+
+</head>
+
+<body>
+
+<div id="Principal">
+
+<!--
+<h1>Esta es la DIVISIÓN Principal</h1>
+<h2>Ahora voy a colocar otras divisiones dentro de ella.</h2>
+-->
+
+
+	<div id="Parte1">
+		
+		<h1>Bienvenidas y Bienvenidos</h1>
+
+		<iframe id="Pantalla" width="760" height="515" src="https://www.youtube.com/embed/cHEYrxZ2dZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	</div>
+
+
+	<div id="Parte2">
+		
+		<h1>Tabla de contenidos</h1>
+
+		<button onclick="Comida()">Comida</button>
+
+		<br>
+
+		<button onclick="Autos()">Autos</button>
+
+		<br>
+
+		<button onclick="Video()">Video</button>
+
+
+	</div>
+
+	<script type="text/javascript">
+		
+		function Comida() {
+
+
+			document.getElementById("Pantalla").src = "01 Comida.html";
+
+
+		}
+
+
+		function Autos() {
+
+			// El ID Pantalla se refiere al IFRAME donde se encuentra el video.
+			// Se le puede cambiar todas los ATRIBUTOS DE LA ETIQUETA.
+
+			document.getElementById("Pantalla").src = "02 Autos.html";
+
+
+		}
+
+
+		function Video() {
+
+
+			document.getElementById("Pantalla").src = "https://www.youtube.com/embed/cHEYrxZ2dZw";
+
+		}
+
+	</script>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>01 EL ALMUERZO</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<!--
+
+<h1>Nuestras Imágenes</h1>
+
+<img height=300 width=420 src="https://www.comeperuano.pe/wp-content/uploads/2020/03/arroz-con-pollo11.jpg">
+
+<img height=300 width=420 src="https://t1.rg.ltmcdn.com/es/images/7/4/1/ceviche_peruano_18147_600_square.jpg">
+
+<img height=300 width=420 src="https://www.radionacional.com.pe/sites/default/files/pollo_brasa.jpg">
+
+-->
+
+<style type="text/css">
+
+.Imagen{
+
+border-radius: 25px;
+
+/* offset-x | offset-y | blur-radius | color */
+box-shadow: 10px 5px 5px black;
+
+
+}
+
+h1 { color: red; }
+	
+
+
+</style>
+
+
+
+<div align="center">
+
+
+<h1>Platos Típicos</h1>
+
+<img class="Imagen" id="IMG_A_CAMBIAR" height=300 width=420 src="https://www.comeperuano.pe/wp-content/uploads/2020/03/arroz-con-pollo11.jpg">
+
+<br>
+
+<button onclick="ANTERIOR()"> ANTERIOR </button>
+
+<button onclick="SIGUIENTE()"> SIGUIENTE </button>
+
+
+
+</div>
+
+
+
+<script type="text/javascript">
+
+ARROZ_CON_POLLO="https://www.comeperuano.pe/wp-content/uploads/2020/03/arroz-con-pollo11.jpg";
+
+CEVICHE="https://t1.rg.ltmcdn.com/es/images/7/4/1/ceviche_peruano_18147_600_square.jpg";
+
+
+POLLO_A_LA_BRASA="https://www.radionacional.com.pe/sites/default/files/pollo_brasa.jpg";
+
+ANTICUCHOS="https://comidasperuanas.net/wp-content/uploads/2015/06/Anticuchos-de-Coraz%C3%B3n-Peruanos.jpg";
+
+LOMO_SALTADO="https://www.hola.com/imagenes/cocina/recetas/20200601169156/receta-lomo-saltado-peruano/0-830-660/lomo-saltado-m.jpg";
+
+
+
+
+
+PLATOS=[ARROZ_CON_POLLO, CEVICHE, POLLO_A_LA_BRASA, ANTICUCHOS, LOMO_SALTADO];
+
+// Inicializando la variable del arreglo
+var i=0;
+
+
+
+function ANTERIOR() {
+
+	var IMG_A_CAMBIAR=document.getElementById("IMG_A_CAMBIAR");
+
+
+	//DECREMENTAR LA VARIABLE DEL ARREGLO
+	i--;
+
+	// PROCESO CONDICIONADO
+	// CONDICIÓN
+
+	if(i>=0) {
+
+		IMG_A_CAMBIAR.src= PLATOS[i];
+
+	}
+
+	else{
+
+		alert("CUIDADO !!! Primera Imagen");
+
+		i=0;
+
+	}
+
+
+}
+
+function SIGUIENTE() {
+
+	var IMG_A_CAMBIAR=document.getElementById("IMG_A_CAMBIAR");
+
+	// INCREMENTAR LA VARIABLE DEL ARREGLO
+	i++;
+
+	if (i<=PLATOS.length-1) {
+
+		IMG_A_CAMBIAR.src=PLATOS[i];
+
+	}
+
+	else {
+
+		alert("CUIDADO !!! Última Imagen");
+
+		i= PLATOS.length-1;
+
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

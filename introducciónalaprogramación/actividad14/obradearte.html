@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSEO DE ARTE</title>
+    <style>
+
+
+        img{
+            width: 500px;
+            height: 315px;
+        }
+
+        #cuadro{
+            text-align: center;
+            background-color: cadetblue;
+            padding: 10px;
+        }
+
+        #titulo{
+            margin-top: 30px;
+            margin-left: 40px;
+            color: rgb(2, 63, 63);
+            font-size: 20px;
+        }
+
+        #nombres{
+            padding: 0%;
+            text-align: center;
+
+        }
+
+        h3{
+            width: 400px;
+            margin-left: 380px;
+            padding-top: 0px;
+            background-color: darkred;
+            color: white;
+        }
+
+        #botones{
+            text-align: center;
+        }
+
+        #ANTERIOR:hover{
+            background-color: rgb(233, 45, 45);
+        }
+        #SIGUIENTE:hover{
+            background-color: rgb(4, 202, 202);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="nombres">
+        <h3>LAS DOS FRIDAS</h3>
+    </div>
+
+    <div id="cuadro">
+         <img src="https://cdn.culturagenial.com/es/imagenes/cuadro-las-dos-fridas-de-frida-kahlo-og.jpg" >
+    </div>
+    
+    <br> 
+
+    <div id="botones">
+        <button id="ANTERIOR" onclick="Anterior()">ANTERIOR</button>
+        <button id="SIGUIENTE" onclick="Siguiente()">Siguiente</button>
+    </div>
+
+   <script>
+
+       i=0
+
+       function Siguiente(){
+
+        if (i<5){
+            i++;
+        }
+        else{
+            alert("GRACIAS POR VISITAR NUESTRA GALERÍA DE ARTE")
+        }
+
+        document.getElementById("cuadro").innerHTML= ARTE[i];
+        document.getElementById("nombres").innerHTML = TEXTOS[i];
+       }
+
+       function Anterior(){
+           if (i>0){
+           i--;               
+           }
+
+        document.getElementById("cuadro").innerHTML= ARTE[i];
+        document.getElementById("nombres").innerHTML = TEXTOS[i];
+       }
+
+
+   </script>
+    
+
+
+    <script>
+
+        //variable para las imagenes
+        var FRIDA = ('<img src="https://cdn.culturagenial.com/es/imagenes/cuadro-las-dos-fridas-de-frida-kahlo-og.jpg" >');
+;
+        var LANOCHE = (' <img src="https://img.culturacolectiva.com/cdn-cgi/image/f=auto,w=1600,q=80,fit=contain/featured_image/2018/10/02/1538494185904/la-noche-estrellada-de-vincent-van-gogh.jpg" >');
+
+        var MEMORIA  = ('<img src="https://www.todocuadros.es/imagenes/pintores/dali/persistencia-memoria-dali-obra.jpg">');
+
+        var MONA  = ('<img src="https://www.muycomputer.com/wp-content/uploads/2019/05/MonaLisa.jpg">');
+
+        var ADAN  = ('<img src="https://aws.admagazine.com/prod/designs/v1/assets/620x439/68698.jpg">');
+
+        var MENINAS = ('<img src="https://aws.admagazine.com/prod/designs/v1/assets/620x818/68701.jpg">');
+
+        var ARTE = [FRIDA,LANOCHE,MEMORIA,MONA,ADAN,MENINAS];
+
+        /*
+        for(i=0;i<=5;i++){
+            document.write(ARTE[i]);
+        }
+        */
+        
+    </script>
+
+    <script>
+        //variables para el texto
+
+        var TEXT0 = ("<h3>LAS DOS FRIDAS</h3>") ;
+        var TEXT1 = ("<h3>LA NOCHE ESTRELLADA</h3>") ;
+        var TEXT2 = ("<h3>LA PERSITENCIA DE LA MEMORIA</h3>") ;
+        var TEXT3 = ("<h3>LA MONA LISA</h3>") ;
+        var TEXT4 = ("<h3>LA CREACIÓN DE ADAN</h3>") ;
+        var TEXT5 = ("<h3>LAS MENINAS</h3>") ;
+
+        var TEXTOS = [TEXT0,TEXT1,TEXT2,TEXT3,TEXT4,TEXT5,]
+
+       /*
+        for (i=0;i<=2;i++){
+            document.write(TEXTOS[i]);
+        }
+        */
+
+
+
+
+    </script>
+    
+</body>
+</html>

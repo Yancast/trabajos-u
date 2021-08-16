@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>streaming</title>
+</head>
+<div style="background-color:brown; margin-left: 400px ;margin-right: 400px;">
+<body>
+    
+    <div style="padding-left: 20px ; padding-right: 20px; padding-bottom: 10px; padding-top: 7px;">
+        <div>
+            <img style="width: 200px; height: 200px; float: right; margin-top: 40px;" src="https://storage.googleapis.com/codigo_bucket/wp-content/uploads/2015/02/fmL6NdX3.png">
+        </div>
+       <form name="LIBRERÍA">
+            <h1 style="color: whitesmoke;">Libros de eleección</h1>
+    
+            <h2 style="color: whitesmoke;"><input type="radio" name="libro" value="orgullo y prejuicio">Orgullo y prejuicio</h2>  
+            <h2 style="color: whitesmoke;"><input type="radio" name="libro" value="Dracula">Dracula</h2>
+            <h2 style="color: whitesmoke;"><input type="radio" name="libro" value="la iliada">La iliada</h2>
+            
+            <!--para que aparezca la eleccion-->
+            <h2 style="color: rgb(199, 104, 70);"> La elección de tu libro es</h2>
+            <input type="text" name="eleccion_libro" > 
+    
+            <!--botón que realiza el proceso-->
+    
+            <input type="button" name="proceso" value="libro elegido" onclick="ELECCION ()">
+    
+        </form>
+    
+        <script>
+            function ELECCION() {
+                LIBRERÍA.eleccion_libro.value=LIBRERÍA.libro.value
+            }
+        </script>
+    </div>
+    
+
+</body>
+</div>
+
+</html>

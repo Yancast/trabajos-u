@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("HAMBURGUESAS EL NAUFRAGO SATISFECHO")
+        alert("compra una")
+        alert("MAXIMO HASTA 100 SOLES")
+
+
+        var META = 100
+
+        do {  
+        var HAMBURGUESA = prompt("hamburguesas sencillas (s) 20 soles y dobles (d) 25 soles"); { 
+        
+        if(HAMBURGUESA = "s"){
+                COSTO= 20;
+                NOM= "sensilla"
+        }
+        
+        else
+
+        if(HAMBURGUESA = "d"){
+                COSTO= 20;
+                NOM = "doble";
+        }
+
+        else{
+            NOM="----"
+            COSTO="0"
+        } 
+        
+
+        document.write(COSTO + NOM);
+        }
+
+        document.write("has ahorrado" + HAMBURGUESA + " SOLES" + "<br>" );
+
+       var CUENTA = 0
+        CUENTA = CUENTA + COSTO;
+
+
+        document.write("tienes en tu cuenta " + CUENTA + " SOLES" + "<br><br>");
+
+
+       }
+   
+
+
+      while (!(CUENTA>= 100));
+    </script>
+</body>
+</html>

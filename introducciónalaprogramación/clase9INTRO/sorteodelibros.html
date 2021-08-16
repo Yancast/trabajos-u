@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Forma al numero aleatorio</title>
+    <style>
+        #cajita{
+            margin-top: 40px;
+            text-align: center;
+            border: 2px solid #ff5d70;
+            margin-left: 450px;
+            margin-right: 500px;
+            height: 250px;
+            background-color: #fff2f2;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="cajita">
+    <h1 style="color: #084568;">Rifa de libros</h1>
+    <h2>Puedes llevarte desde 3 a 20 libros</h2>
+    <h3 style="color:#900112">tres ganadores</h3>
+    <script>
+
+        for ( var i=1; i<=3; i++) {
+
+    
+     var LI = Math.random();
+
+     var MIN= 3;
+     var MAX= 20;
+
+     var CANT_LI = LI *(MAX - MIN) + MIN; 
+
+     var TOTAL_LI = Math.round (CANT_LI);
+
+     document.write("PREMIO "+ i + " PUESTO= " + TOTAL_LI + " CANTIDAD DE LIBROS " + "<br>")
+    }
+
+
+    </script>
+   </div> 
+</body>
+</html>

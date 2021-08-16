@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SORTEO DE CARAMELOS </title>
+</head>
+<body>
+    <div id="contenido">
+        <h1>LLEVA TUS CARAMELOS</h1>
+        <H2>TRES PARTICIPANTES, HASTA 50 CARAMELOS</H2>
+
+         <script type="text/javascript">
+
+           for ( var i=1; i<=3; i++) {
+
+               var CA= Math.random();
+
+               var MAX = 50;
+               var MIN = 2;
+
+               var CANT = CA * (MAX - MIN ) + MIN;
+               var RESULTADO = Math.round (CANT);
+
+               document.write("ESTE ES EL GANADOR "+ RESULTADO + "<br> <br>")  }
+
+         </script>
+
+    </div>
+    
+</body>
+</html>

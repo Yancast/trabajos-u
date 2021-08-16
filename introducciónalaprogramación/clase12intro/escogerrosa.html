@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCOGE TU FOTO</title>
+    <style>
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        *{
+            align-items: center;
+            text-align: center;            
+            margin-top: 30px;
+
+        }
+    </style>
+</head>
+<body>
+   <!--
+    <img src="https://supertrendy.net/wp-content/uploads/2020/12/16007652504586n2ovg9-1140x759.jpeg" >
+    <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/01/24/15798526384632.jpg" >
+    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/in-this-image-released-on-october-1-rosalia-is-seen-onstage-news-photo-1606399936." >
+    <img src="https://vocescriticas1.cdn.net.ar/252/vocescriticas1/images/90/00/900053_6b9cbb7aba21698261679bc0d94ecdd596a100bf82b8d428c843c65d1d4134b7/lg.webp" >
+-->
+</body>
+
+<script>
+    var I1= (' <img src="https://supertrendy.net/wp-content/uploads/2020/12/16007652504586n2ovg9-1140x759.jpeg" >');
+     //document.write(I1);
+    var I2= (' <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/01/24/15798526384632.jpg" >');
+    //document.write(I2);
+
+    var I3= (' <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/in-this-image-released-on-october-1-rosalia-is-seen-onstage-news-photo-1606399936." >');
+    //document.write(I3);
+
+    var I4= (' <img src="https://vocescriticas1.cdn.net.ar/252/vocescriticas1/images/90/00/900053_6b9cbb7aba21698261679bc0d94ecdd596a100bf82b8d428c843c65d1d4134b7/lg.webp" >');
+    //document.write(I4);
+
+     IMS = [I1,I2,I3,I4];
+
+  // document.write(IMS [1])
+
+  document.write ("<h1>FOTOS EN STOCK</h1>" );
+
+   for (i=0; i<=3; i++){
+    document.write( IMS [i]);
+   }
+
+   alert("hola vas a escoger un numero del 0 al 4");
+
+   var SORTEO= Number(prompt("escoge tu número 0,4"));
+
+  document.write ("<h1>FOTO seleccionada</h1>" );
+
+  document.write(IMS[SORTEO])
+
+</script>
+</html>

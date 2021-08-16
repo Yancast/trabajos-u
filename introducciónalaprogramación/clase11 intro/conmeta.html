@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="eS">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USO DEL DO WHILE</title>
+</head>
+<body>
+    <script>
+
+       alert("BUENAS TARDES JOVEN");
+
+       alert("hoy vamos a aprender sobre ahorrar teniendo una meta");
+
+       //voy a necesitar una variable para almacenar mi Meta 
+       // voy a necesitar un valor 
+
+       var META = 100;
+
+        //aquí declaro el valor inicial de la cuenta
+        var CUENTA =0;
+       do { 
+        AHORRO = Number( prompt("¿cuantos DOLARES quieres ahorrar hoy? - la meta es 100"));
+     
+        document.write("has ahorrado" + AHORRO + " SOLES" + "<br>" );
+
+        //MI objetivo ahora es acumular mis ahorros
+        //se necesita una variable acumuladora.
+
+        var CUENTA 
+
+        CUENTA = CUENTA + AHORRO;
+        //lo que hay en la cuenta le sumo el ahorro y lo guardo en la misma cuenta
+        //es muy importante tener un valor inicial en la cuenta -- se coloca antes del proceso repetitivo
+         
+        document.write("tienes en tu cuenta " + CUENTA + " SOLES" + "<br><br>");
+
+        } 
+
+       while(!(CUENTA >= 100));
+       // que se alcance la metal  ¿cuando se alcanza la meta?
+       //cuando la cuenta llega a 100 soles  cuenta >=100
+       //por lo tanto  para que el proceso repetitivo continue la cuenta no tiene que ser
+       document.write("haz llegado a la meta");
+       document.write("haz ahorrado");
+   
+   </script>
+
+    
+</body>
+</html>

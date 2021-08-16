@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DECISIÓN</title>
+	<meta charset="utf-8">
+</head>
+<body style="text-align: center; background-color: aquamarine;">
+
+<script type="text/javascript">
+// Vamos a dialogar con el Programa
+// El Saludo
+alert("Muy Buenas Tardes alumno");
+alert("Hoy conoceras las obras más importante de dos artista ");
+
+// la pregunta y la respuesta
+// Pregunta: ¿De qué artista quisieras conocer su obra? 
+// Respuesta: (l) Leonardo da vinve  (f) Frida khalo
+var Artista=prompt("¿De qué artista quisieras conocer su obra más importante? (l) Leonardo da vinve  (f) Frida khalo (v)Vincent van Gogh" );
+
+// El mensaje
+// Condición
+// Si la respuesta es "l", entonces el mensaje será "la obra más conocida de Leonardo da Vince es la Gioconda"
+if (Artista=="l") {
+
+	var MENSAJE="la obra más conocida de Leonardo da Vince es la Gioconda";
+
+    //mostrar imagen
+	var PINTURA='<img src="https://historia.nationalgeographic.com.es/medio/2019/04/10/04-gioconda-mona-lisa-leonardo-da-vinci_b9e8681b_550x807.jpg">'
+
+
+}
+
+else // En caso contrario
+
+
+
+// si la respuesta es f Frida kahlo La obra más conocida de frida kahlo es Las dos Fridas
+if  (Artista=="f"){
+  MENSAJE="La obra más conocida de frida kahlo es Las dos Fridas"; 
+  
+ PINTURA='<img src="https://i0.wp.com/artefeed.com/wp-content/uploads/2015/04/Las-dos-fridas-autorretrato.jpg?resize=830%2C834&ssl=1">'; 
+}
+
+
+else
+
+if (Artista=="v") {
+
+var MENSAJE="la obra más conocida de Vicent van Gogh es la noche estrellada";
+
+//mostrar imagen
+PINTURA='<img src="https://wrmx00.epimg.net/radio/imagenes/2020/08/25/martha_debayle/1598361456_979013_1598362783_noticia_normal_recorte1.jpg">'
+
+}
+
+
+
+// En caso contrario. Si no es "l,f" mostrar
+else {
+
+	MENSAJE="Pronto agregaremos más artístas";
+
+	PINTURA='<img src="https://i.pinimg.com/736x/8d/d3/51/8dd351461b48024bf3beba39726f889e.jpg"'
+
+}
+
+
+
+// Mostrar mensaje de tu elección
+alert(MENSAJE);
+
+// Mostrar la imagen
+document.write(PINTURA);
+
+
+
+</script>
+
+</body>
+</html>

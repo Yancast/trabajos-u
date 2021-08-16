@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Peliculas</title>
+</head>
+<body style="text-align: center; background-color: aquamarine; ;" >
+    <!--
+    <h1>sala de Peliculas</h1>
+
+    <h1>romantica</h1>
+    <img width="400" src="https://es.web.img3.acsta.net/pictures/16/02/04/15/49/599815.jpg">
+    
+    <h1>Terror</h1>
+    <img width="400" src="https://images.cdn2.buscalibre.com/fit-in/360x360/67/f3/67f3cb8e13492ff231c1acc31c474564.jpg">
+    -->
+    <script type="text/javascript">
+
+     //dialogo
+     //saludo, daremos la bienvenida
+
+     alert("Hola"); alert("bienvenido a la elección de tu pelicula");
+      
+     //la pregunta y respuesta
+
+     var eleccion=prompt("¿que categoria de pelicula te gustaría ver? r) Romantica t) terror");
+
+     //creo un mensaje para visualizar la respuesta ingresada
+
+     alert(" tu respuesta fue " +eleccion);
+
+     //Procedimiento de la alternativa 1
+
+     if (eleccion=="r") {
+         alert("eligiste romantia, disfruta de Yo Antes de tí"); 
+         alert(" la pelicula tiene tres estrellas, Considerada mejor pelicula romantica del 2018");
+         var titulo="<h1>romantica</h1>";      
+         var portada='<img width="400" src="https://es.web.img3.acsta.net/pictures/16/02/04/15/49/599815.jpg">';
+
+    }
+
+    else
+
+     //alternativa 2
+     if (eleccion=="t"){
+         alert("elegiste una pelicula de terror,disfruta tu pelicula");
+         alert("escrito por sthepen king, la pelicula tiene tres estrellas");
+
+         titulo="<h1>Terror</h1>" ;
+         portada='<img width="400" src="https://images.cdn2.buscalibre.com/fit-in/360x360/67/f3/67f3cb8e13492ff231c1acc31c474564.jpg">';
+
+     }
+
+
+     else {
+         alert(" tu eleccion no existe, pronto agregaremos más categorias, vuelve pronto");
+         titulo="no hay"
+         portada='<img style="width: 1200px; " src="https://img.freepik.com/vector-gratis/vector-senal-neon-rojo-cerrado_53876-61392.jpg?size=338&ext=jpg">';
+     }
+
+
+     //titulo
+     document.write(titulo);
+
+     //portada
+     document.write(portada);
+
+     
+     
+     
+
+
+    </script>
+
+    
+</body>
+</html>
