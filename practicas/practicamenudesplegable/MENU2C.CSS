@@ -1,0 +1,37 @@
+*{
+    padding: 0%;
+    margin: 0px;
+}
+
+.cuerpo{
+    padding-left: 800px;
+    width: 50%;
+    margin-top: 10%;
+}
+
+.nav>li{
+    float: left;
+    list-style: none;
+}
+ul{
+    list-style: none;
+}
+
+.nav li a{
+    background-color: yellow;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+.nav li a:hover{
+    background-color: rgb(179, 255, 247);
+}
+
+.nav li ul{
+    display: none;
+    position: absolute;
+}
+
+.nav li:hover ul{
+    display: block;
+}

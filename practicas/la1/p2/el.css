@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Staatliches&display=swap');
+#general{
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+align-items: center;
+}
+header{
+    width: 1350px;
+    height: 300px;
+    background-position: center;
+
+
+}
+
+#navegacion{
+    float: right;
+    margin-top: 225px;
+    margin-right: 90px;
+
+}
+
+ul li{
+    display: inline;
+}
+
+a{
+    font-family:Staatliches;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 30px;
+    color: white;
+}
+
+a:hover{
+    color:#faa1a1;
+}
+
+h1{
+    font-family: 'Domine', serif;
+    font-size: 40px;
+    text-shadow: 0px 2px 3px rgb(182, 182, 182);
+}
+.clear{
+    clear: both;
+}
+
+article{
+    width: 600px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+#texto{
+    font-size: 20px;
+
+}
+
+aside{
+    float: right;
+    margin-left:250px ;
+    padding-top: 20px;
+
+    width: 30%;
+}
+
+#imagen{
+    float:right;
+    height: 630px;
+    box-shadow: 1px 1px 10px rgb(219, 219, 219);
+    border-radius: 10px;
+
+}
+
+img{
+    width: 500px; height: 630px;   
+     border-radius: 10px;  
+}
+
+#eldiv{
+    display: inline-flex;
+    margin-top: 13px;
+    margin-left: 5px;
+    width: 1338px;
+    height: 705px;
+    box-shadow: 0px 0px 9px 0.1px rgb(221, 221, 221);
+}
+
+/* los botenes */
+
+
+#elboton{
+    margin-left: 50px;
+    display: flex;    
+    margin-top: 620px;
+}
+
+button{
+    padding: 3px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 26px;
+    border-radius: 30px;
+    border:none;
+    cursor: pointer;
+    box-shadow: -1px 1px 10px 0px rgb(221, 221, 221);
+}
+button:hover{
+    background-color: rgb(241, 241, 241);
+}
+
+/*la bolita*/
+
+#bolit1{
+position: relative;
+height: 20px;
+width: 1348px;
+margin-top: 10px;
+}
+
+#bolit2{
+    background-color: #870714;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+@keyframes BOLITA1{
+    0% {left: 0%;}
+    50%{left: 100%;}
+    75%{left: 0%;}
+    100%{left: 0%;}
+}
+
+#bolit2{
+    animation-name: BOLITA1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+ 
+/*la otra bolita*/
+
+#bolita2{
+position: relative;
+height: 20px;
+width: 1348px;
+margin-top: 10px;
+}
+
+#bolita3{
+    background-color: #020B34;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+@keyframes BOLITA1{
+    0% {left: 0%;}
+    50%{left: 100%;}
+    75%{left: 0%;}
+    100%{left: 0%;}
+}
+
+#bolita3{
+    animation-name: BOLITA1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+/*tarjeta expandible*/
+
+#antes{
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 250vh;
+    display: flex;
+
+}
+
+.panel{
+    height: 90vh;
+    border-radius: 20px;
+    margin: 7px;
+    color: rgb(255, 253, 247);
+    background-size: auto 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+    transition: flex 0.7s ease-in ;
+    flex: 0.5;
+    
+}
+.panel h3{
+    position: absolute;
+    font-size: 40px;
+    bottom: 10px;
+    left: 35px;
+    margin: 0;
+    opacity: 0;
+}
+.panel.active{
+    flex: 7.5; 
+    box-shadow: 1px -3px 40px 1px  rgb(240, 240, 240);
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.1s ease-in 1s;
+   
+}
+
+
+
+
+@media ( max-width: 580px){
+
+    .container{
+        width: 70vw;
+    }
+    
+    .panel :nth-last-child(4) .panel :nth-last-child(4){
+        display: none;
+    }
+     
+}

@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#header{
+    margin-left: 10%;
+    width: 50%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav >li{
+    float: left;
+}
+
+.nav li a{
+    background-color: aquamarine;   
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.nav li a:hover{
+    background-color: brown;
+}
+
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 10px;
+    
+}
+
+.nav li:hover ul{
+    display: block;
+
+}

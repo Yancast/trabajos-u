@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AGENCIA DE VIAJES</title>
+    <style>
+        body{
+            text-align: center;
+            margin-left: 250px;
+        }
+        #td1{
+            text-align: left;
+        }
+        h2{
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <form name="PASAJEDEAVION">
+        <table border="0.5">
+            <tr>
+                <td bgcolor="#48C9B0 " colspan="2"> 
+                    <h1 style="color: aqua; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">¿A DÓNDE VIAJAMOS?</h1>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#2874A6" id="td1">
+                    <h2> <input type="radio" name="destino" value="MACHUPICHU">MACHU PICHU</h2>
+                    <h2> <input type="radio" name="destino" value="ROMA">ROMA</h2>
+                    <h2> <input type="radio" name="destino" value="PARIS">PARÍS</h2>
+                    <h2> <input type="radio" name="destino" value="MEXICO">MÉXICO</h2>
+                </td>
+                <td bgcolor="#1A5276" >
+                    <div id="imagen">
+                     <img width="500" src="https://marketingandmarkets.files.wordpress.com/2015/08/latam_logo_detail_animated2.gif">
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td bgcolor="#52BE80">
+                    <input type="button" name="destino" value="TU PROXIMO VIAJE ES" onclick="resultado()" >
+                </td>
+                <td bgcolor="#F9E79F">
+                    <h2 style="color: black;">
+                      TU PROXIMO VIAJE ES A 
+                     <input type="text" name="mensaje">
+                   </h2>
+                </td>
+            </tr>
+        </table>
+
+
+    </form>
+
+    <script type="text/javascript">
+    
+    function resultado(){
+
+        PASAJEDEAVION.mensaje.value = PASAJEDEAVION.destino.value;
+        
+        var BOLETO = PASAJEDEAVION.destino.value;
+
+        switch (BOLETO) {
+            case "MACHUPICHU": 
+            alert("tu viaje será para MACHUPICHU");
+            var IMAGEN='<img width="600" src="https://img.culturacolectiva.com/content/2016/01/viajarmachupicchu.gif">';
+            break;
+
+            case "ROMA": 
+            alert("tu viaje será para ROMA");
+            var IMAGEN='<img width="500" src="http://mural.uv.es/hecesla/imagenes/anigifColiseo.gif">';
+            break;
+                   
+            case "PARIS": 
+            alert("tu viaje será para PARÍS");
+            var IMAGEN='<img width="600" src="https://www.viajesgeotours.com/blog/wp-content/uploads/2017/10/giphy.gif">';
+            break;
+                   
+            case "MEXICO": 
+            alert("tu viaje será para CIUDAD DE MÉXICO");
+            var IMAGEN='<img width="500" src="https://media.giphy.com/media/1RxR8cHfA8U12/giphy.gif">';
+            break;
+            
+            default:
+                alert("debes elegir un destino")
+                var IMAGEN='<img width="450" src="https://media.giphy.com/media/3o85xLrtXp55CBaTBK/giphy.gif">';
+             
+                        
+            
+
+        }
+
+        document.getElementById("imagen") . innerHTML=IMAGEN
+
+
+    }
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    font-family: 'Staatliches';
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.contra{
+    display: flex;
+    width: 79vw;
+}
+
+.panel{
+    background-size: auto 100%;
+    background-position:center ;
+    background-repeat: no-repeat;
+    height: 65vh;
+    border-radius: 40px;
+    color: rgb(255, 244, 244);
+    cursor: pointer;
+    flex: 0.4;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3{
+    font-size: 30px;
+    font-weight: 525;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.4s ease-in 0.4s;
+}
+
+@media (max-width:580px){
+    .contra{
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4), .panel:nth-of-type(5){
+        display: none;
+    }
+}
